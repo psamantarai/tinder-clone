@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./componets/header/header.componet";
+import SwipeButtons from "./componets/swipe-button/swipe-button.component";
+import TinderCards from "./componets/tinder-card/tinder-card.component";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Header */}
+      <Header />
+      {/* TinderCards */}
+      <TinderCards />
+      {/* SwiperButtons */}
+      <SwipeButtons />
     </div>
   );
 }
